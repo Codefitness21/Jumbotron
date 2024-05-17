@@ -1,0 +1,171 @@
+html {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Used the root selector so colors could be used throughout. */
+:root {
+    --primary: #ffffff;
+    --secondary: #f0861c;
+    --tertiary: #d40505;
+}
+
+body {
+    margin: 0;
+    background: url(images/mls-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+1. Rearranged the css as it appears html.
+2. Added comments to each section to further organize it with a beginning and end.
+3. Deleted and consolidated.
+4. I used rem instead of px: 1. for uniformity; 2. It's not absolute and allows for scalability.
+5. I made comments throughout.
+  */
+
+/* Beginning of jt-container section */
+.jt-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Beginning of header section */
+.jt-header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.jt-header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 40px;
+}
+
+.jt-header img {
+    height: 8vh;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+}
+
+.qr-code {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    padding: 20px;
+    background-color: var(--secondary);
+}
+/* End of header section */
+
+/* Beginning of subheader section */
+
+.jt-subheader {
+    display: flex;
+    flex-direction: column; 
+}
+
+h3 {
+    font-size: 70px;
+    color: var(--primary);
+    padding: 30px;
+    margin: 15px;
+    line-height: 6.5rem;
+}
+/* End of subheader section */
+
+/* Beginning of playlist container */
+.jt-playlist-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    padding: 10px;
+}
+
+/* Beginning of album cover image section */
+.jt-playlist-item {
+    height: 40vh;
+}
+
+.jt-album-cover-image {
+    height: 85%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* End of album cover image section */
+
+/* Beginning of song and artist label section */
+.jt-playlist-item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--tertiary);
+    text-align: center;
+    height: 30%;
+}
+
+/* Font size taken care of in JS */
+.jt-song-name {
+    color: var(--primary);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.jt-artist-name {
+    position: absolute;
+    color: var(--primary);
+    padding: 3rem;
+    text-align: center;
+}
+
+/* End of song and artist label section */
+
+/* Beginning of percentage container section */
+.jt-percentage-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+.jt-percentage-vote {
+    font-size: 60px;
+    padding: 15px;
+    margin: 0;
+}
+
+.jt-percentage-bar {
+    position: relative;
+    background-color: var(--primary);
+    margin-top: 3%;
+    width: 90%;
+}
+
+.jt-percentage-progress-bar {
+    position: absolute;
+    background-color: var(--secondary);
+    height: 100%;
+}
+/* End of percentage container section */
+/* End of song voting container */
+/* End of jt-container section */

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="script.js"></script>
+	<title>2023 MLS All-Star</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+		rel="stylesheet">
+</head>
+
+<!-- 
+//Top section
+1.Removed QR code
+2.Removed double headlines.
+3.Formatted the document.
+4.Took out extra spaces.
+5.Added a container for the entire jumbo screen. Both sections wrapped in jumbo-container.
+6.Left the sections in place.
+7.Removed Scan Now and changed the title.
+8.Removed the styling from the image.
+9.Changed top-title to header.-->
+
+<body>
+	<div class="jt-container">
+		<div class="jt-header-container">
+		<div class="jt-header">
+			<img src="images/FIFA-Women's-World-Cup-2023.png">
+			<h1>Scan Now and Vote!</h1>
+		</div>
+		<div>
+			<img class="qr-code" src="images/qr-mls.svg">
+		</div>
+		<div class="jt-subheader">
+			<h3>It's your turn to play DJ!<br>You can choose the warm up song!</h3>
+		</div>
+	</div>
+		<!-- 
+//Bottom section
+1.Removed the class from the section so it stand alone.
+2.Created a container for this section with an appropriate name.
+3.Created individual containers.
+4.Class name changed to "song-vote" from "choice".
+5.Song-cover-image for class.
+6.Changed photo naming to image.
+7.Removed the id alongside the individual class. I didn't see in JS where that fit and it wasn't used.
+8. I used a grid. I wanted it to be easy to place images or adjust them accordingly.
+ -->
+
+		<div class="jt-playlist-container">
+
+			<div class="jt-playlist-item">
+				<div class="jt-album-cover-image" id="image0"></div>
+				<div class="jt-playlist-item-info">
+					<p class="jt-song-name" id="jt-song-name0"></p>
+					<p class="jt-artist-name" id="jt-artist-name0"></p>
+				</div>
+				<div class="jt-percentage-container">
+					<p class="jt-percentage-vote" id="vote0">0%</p>
+					<div class="jt-percentage-bar">
+						<div class="jt-percentage-progress-bar" id="bar0"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="jt-playlist-item">
+				<div class="jt-album-cover-image" id="image1"></div>
+				<div class="jt-playlist-item-info">
+					<p class="jt-song-name" id="jt-song-name1"></p>
+					<p class="jt-artist-name" id="jt-artist-name1"></p>
+				</div>
+				<div class="jt-percentage-container">
+					<p class="jt-percentage-vote" id="vote1">0%</p>
+					<div class="jt-percentage-bar">
+						<div class="jt-percentage-progress-bar" id="bar1"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="jt-playlist-item">
+				<div class="jt-album-cover-image" id="image2"></div>
+				<div class="jt-playlist-item-info">
+					<p class="jt-song-name" id="jt-song-name2"></p>
+					<p class="jt-artist-name" id="jt-artist-name2"></p>
+				</div>
+				<div class="jt-percentage-container">
+					<p class="jt-percentage-vote" id="vote2">0%</p>
+					<div class="jt-percentage-bar">
+						<div class="jt-percentage-progress-bar" id="bar2"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="jt-playlist-item">
+				<div class="jt-album-cover-image" id="image3"></div>
+				<div class="jt-playlist-item-info">
+					<p class="jt-song-name" id="jt-song-name3"></p>
+					<p class="jt-artist-name" id="jt-artist-name3"></p>
+				</div>
+				<div class="jt-percentage-container">
+					<p class="jt-percentage-vote" id="vote3">0%</p>
+					<div class="jt-percentage-bar">
+						<div class="jt-percentage-progress-bar" id="bar3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
