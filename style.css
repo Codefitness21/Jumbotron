@@ -27,13 +27,6 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-/* 
-1. Rearranged the css as it appears html.
-2. Added comments to each section to further organize it with a beginning and end.
-3. Deleted and consolidated.
-4. I used rem instead of px: 1. for uniformity; 2. It's not absolute and allows for scalability.
-5. I made comments throughout.
-  */
 
 /* Beginning of jt-container section */
 .jt-container {
